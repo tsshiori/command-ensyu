@@ -19,8 +19,8 @@ public class Bmi {
         System.out.print("身長：");
         double height2 = Integer.parseInt(sc.nextLine());
 
-        double bmi = weight / height / height;
-        double bmi2 = weight2 / height2 / height2;
+        double bmi = weight / ( (height / 100) * (height / 100));
+        double bmi2 = weight2 / ((height2 / 100) * (height2 / 100));
 
         System.out.print("１人目のBMIは、");
         System.out.print(String.format("%.2f", bmi));
