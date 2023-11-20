@@ -5,19 +5,19 @@ public class Bmi {
         Scanner sc = new Scanner(System.in);
         System.out.println("１人目の体重を入力してください。");
         System.out.print("体重：");
-        double weight = Integer.parseInt(sc.nextLine());
+        double weight = Double.parseDouble(sc.nextLine());
 
         System.out.println("２人目の体重を入力してください。");
         System.out.print("体重：");
-        double weight2 = Integer.parseInt(sc.nextLine());
+        double weight2 = Double.parseDouble(sc.nextLine());
 
         System.out.println("１人目の身長を入力してください。");
         System.out.print("身長：");
-        double height = Integer.parseInt(sc.nextLine());
+        double height = Double.parseDouble(sc.nextLine());
 
         System.out.println("２人目の身長を入力してください。");
         System.out.print("身長：");
-        double height2 = Integer.parseInt(sc.nextLine());
+        double height2 = Double.parseDouble(sc.nextLine());
 
         double bmi = weight / ( (height / 100) * (height / 100));
         double bmi2 = weight2 / ((height2 / 100) * (height2 / 100));
